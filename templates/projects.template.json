@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "projects": [
+    {
+      "id": "example-protocol",
+      "name": "Example Protocol",
+      "status": "active",
+      "category": "points",
+      "urls": {
+        "main": "https://example.protocol",
+        "tasks": "https://example.protocol/quests",
+        "claim": "https://claim.example.protocol"
+      },
+      "wallets": [
+        {
+          "chain": "evm",
+          "address": "0x0000000000000000000000000000000000000000"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "daily-checkin",
+          "type": "daily",
+          "title": "Daily check-in on the quest page",
+          "repeat": "daily",
+          "url": "https://example.protocol/quests",
+          "last_done": null,
+          "streak": 0,
+          "notes": ""
+        },
+        {
+          "id": "weekly-swap",
+          "type": "weekly",
+          "title": "Weekly swap on the DEX",
+          "repeat": "weekly",
+          "url": "https://app.example.protocol/swap",
+          "last_done": null,
+          "streak": 0,
+          "notes": "Needs wallet signature - agent prepares only."
+        }
+      ],
+      "claims": [
+        {
+          "id": "tge-claim",
+          "label": "TGE token claim",
+          "url": "https://claim.example.protocol",
+          "status": "watching",
+          "deadline": null,
+          "amount_hint": "",
+          "last_checked": null
+        }
+      ],
+      "metrics": {
+        "points": 0,
+        "points_source": "manual",
+        "rank": null,
+        "updated_at": null
+      },
+      "notes": ""
+    }
+  ]
+}
